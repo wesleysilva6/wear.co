@@ -127,7 +127,8 @@ header{
 }
 
 .card:hover{
-    transform: scale(1.06);
+    transform: scale(1.05);
+    transition: 0.3s;
 }
 
 .card img{
@@ -272,7 +273,7 @@ footer .line-footer2{
 
 @media screen and (max-width:913px){
     header .bottom-header{
-        display: none;  
+        display: none;
     }
 }
 
@@ -309,6 +310,11 @@ footer .line-footer2{
         width: 103px;
         border-radius: 10px;
         border: 2px solid #000000;
+    }
+
+    .card:hover{
+        transform: none;
+        transition: none;
     }
 
     .card img{
@@ -404,6 +410,12 @@ footer .line-footer2{
         border: 2px solid black;
         text-align: center;
     }
+
+    .card:hover{
+        transform: none;
+        transition: none;
+    }
+
     .card img{
         width: 85px;
         height: 100px;
