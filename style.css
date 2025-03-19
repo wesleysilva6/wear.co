@@ -286,6 +286,7 @@ footer .line-footer2{
         width: 25px;
         font-size: 15px;
         border-radius: 1px;
+        border: none;
     }
     
     .top-header .logosocial button:hover{
@@ -389,6 +390,7 @@ footer .line-footer2{
         width: 19px;
         color: #fff;
         font-size: 13px;
+        border: none;
     }
     
     .img-box .img-top {
