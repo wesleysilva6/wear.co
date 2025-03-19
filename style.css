@@ -33,6 +33,10 @@ header{
     justify-content: space-between;
 }
 
+.top-header .logo a{
+    text-decoration: none;
+}
+
 .top-header .logo h1{
     width: 240px;
     color: #fff;
@@ -285,7 +289,7 @@ footer .line-footer2{
     .top-header .logosocial button{
         width: 25px;
         font-size: 15px;
-        border-radius: 1px;
+        border-radius: none;
         border: none;
     }
     
@@ -391,6 +395,7 @@ footer .line-footer2{
         color: #fff;
         font-size: 13px;
         border: none;
+        border-radius: none;
     }
     
     .img-box .img-top {
