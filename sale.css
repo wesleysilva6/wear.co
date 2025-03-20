@@ -1,6 +1,8 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
 
 *{
     margin: 0;
@@ -22,6 +24,8 @@ header{
     padding: 10px 10px;
 }
 
+/* TOPO */
+
 .top-header{
     padding: 5px;
     background-color: #000000;
@@ -37,6 +41,9 @@ header{
     width: 240px;
     color: #ffffff;
 }
+.top-header .logo a{
+    text-decoration: none;
+}
 
 .top-header .logosocial button{
     padding: 1px;
@@ -48,12 +55,6 @@ header{
     border: 0px solid transparent;
     font-size: 16px;
     cursor: pointer;
-}
-
-.top-header .logosocial button:hover{
-    background-color: #ffffff;
-    color: #000000;
-    transition: 0.2s;
 }
 
 .bottom-header{
@@ -84,6 +85,7 @@ header{
     list-style-type: none;
 }
 
+/* MENU */
 .drop-hover{
     position: relative;
 }
@@ -116,6 +118,7 @@ header{
     height: 250px;
 }
 
+/* CARD DE COMPRA */
 .container{
     display: flex;
     justify-content: center;
@@ -128,8 +131,8 @@ header{
     border: 2px solid #000000;
     border-radius: 20px;
     display: flex;
-    justify-content: center;
     margin-bottom: 70px;
+    text-align: center;
 }
 
 .card img{
@@ -139,5 +142,232 @@ header{
 
 .texto h2{
     display: flex;
+    padding: 30px 100px;
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.btn-comprar button{
+    background: transparent;
+    border: 2px inset #000000;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+/* FOOTER */
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+.interface-footer{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+.line-footer1{
+    text-align: center;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 20px;
+}
+
+.line-footer1 h1{
+    font-size: 40px;
+}
+
+.line-footer1 p{
+    font-size: 20px;
+    margin: 10px 0 20px;
+}
+
+.line-footer1 from{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line-footer1 form input[type=email]{
+    width: 300px;
+    height: 35px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 10px;
+    outline: 0;
+    border-radius: 4px;
+}
+
+.line-footer1 form input[type=submit]{
+    width: 70px;
+    height: 35px;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.line-footer1 form input:hover[type=submit]{
+    background-color: #000000;
+    color: #ffffff;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+footer .line-footer2{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
     text-align: center;
 }
+
+
+.line-footer2 .box-links a{
+    color: #ffffff;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.box-line-footer .btn-footer button{
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.box-line-footer .btn-footer button:hover{
+    background-color: #ffffff;
+    color:#000000;
+    transition: 0.2s;
+}
+
+@media screen and (max-width:913px) {
+    header .bottom-header{
+        display: none;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .top-header .logo h1{
+        font-size: 20px;
+    }
+    
+    .top-header .logosocial button{
+        width: 25px;
+        border-radius: none;
+        border: none;
+        font-size: 15px;
+    }
+
+/* FOOTER */
+    .line-footer1{
+        text-align: center;
+        border-bottom: 2px solid #ffffff;
+        padding-bottom: 20px;
+    }
+    
+    .line-footer1 h1{
+        font-size: 30px;
+    }
+    
+    .line-footer1 p{
+        font-size: 15px;
+        margin: 10px;
+    }
+    
+    .line-footer1 form input[type=email]{
+        width: 240px;
+    }
+    
+    .line-footer1 form input[type=submit]{
+        width: 70px;
+        color: #000000;
+    }
+    
+    footer .line-footer2{
+        justify-content: center;
+        gap: 80px;
+    }
+    
+    .line-footer2 .box-links a{
+        color: #ffffff;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:393px) {
+    .top-header .logo h1{
+        font-size: 20px;
+    }
+    
+    .top-header .logosocial button{
+        width: 19px;
+        border-radius: none;
+        border: none;
+        font-size: 13px;
+    }
+
+/* CARD/CONTAINER */
+
+.card{
+    width: 350px;
+}
+
+.card img{
+    padding: 40px 0 1px;
+}
+
+.texto h2{
+    padding: 1px;
+    margin: 2px 0 0 -100px;
+}
+
+/* FOOTER */
+    .line-footer1 h1{
+        font-size: 30px;
+    }
+    
+    .line-footer1 p{
+        font-size: 15px;
+        margin: 10px;
+    }
+    
+    .line-footer1 form input[type=email]{
+        width: 250px;
+    }
+    
+    .line-footer1 form input[type=submit]{
+        width: 70px;
+        color: #000000;
+    }
+    
+    footer .line-footer2{
+        justify-content: center;
+        gap: 70px;
+        }
+    
+    .box-line-footer .btn-redes button{
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+        background: transparent;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+}   
