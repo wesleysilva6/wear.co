@@ -214,7 +214,7 @@ footer{
 }
 
 .line-footer1 form input:hover[type=submit]{
-    background-color: #000000;
+    background-color: #181818;
     color: #ffffff;
     transition: 0.2s;
     cursor: pointer;
