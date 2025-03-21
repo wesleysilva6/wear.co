@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="sale.css">
-    <title>Wear</title>
+    <title>WEAR</title>
 </head>
 <body>
     <header>
@@ -48,22 +48,50 @@
         </section>
     </header>
         
-    <section class="img-box">
-            <div class="img-top">
-            </div>
         </section>
 
-        <div class="container">
-            <div class="card">
-                <img src="https://cdn.awsli.com.br/800x800/1897/1897332/produto/207096638/camiseta-preta-vitseu.jpg" alt="logo">
-                <div class="texto">
-                    <h2>Camisa Nike Modelo Dri-Fit 2025 <br>Lançamento oferta</h2>
+    
+            <section class="container">
+                <div class="card">
+                    <img src="images-removebg-preview (1).png" alt="logo">
+                        <div class="txt">
+                            <h2 class="title">Camisa Nike Modelo Dri-Fit 2025 <br>Lançamento oferta <strong>R$189,99</strong></h2>
+                            <h2 class="txt-size">Escolha o tamanho da camiseta:</h2>
+    
+                            <div id="sizes">
+                                <div class="size-option" onclick="selectSize(this)">P</div>
+                                <div class="size-option" onclick="selectSize(this)">M</div>
+                                <div class="size-option" onclick="selectSize(this)">G</div>
+                                <div class="size-option" onclick="selectSize(this)">GG</div>
+                            </div>
+
+                            <h2 class="txt-pg">Escolha o método de pagamento:</h2>
+                            <div class="payment-box">
+                                <div class="payment-option" onclick="selectPayment(this)('Pix')">
+                                    <img src="https://img.icons8.com/?size=100&id=JCKq54BoMJK1&format=png&color=000000" alt="Pix">
+                                    <span>Pix</span>
+                                </div>
+                                <div class="payment-option" onclick="selectPayment(this)('Cartão de Crédito')">
+                                    <img src="https://img.icons8.com/?size=100&id=22128&format=png&color=000000 " alt="Cartão de Crédito">
+                                    <span>Cartão de Crédito</span>
+                                </div>
+                                <div class="payment-option" onclick="selectPayment(this)('Cartão de Débito')">
+                                    <img src="https://img.icons8.com/?size=100&id=22128&format=png&color=000000" alt="Cartão de Débito">
+                                    <span>Cartão de Débito</span>
+                                </div>
+                                <div class="payment-option" onclick="selectPayment(this)('Boleto')">
+                                    <img src="https://img.icons8.com/?size=100&id=F77TABNQzR3w&format=png&color=000000" alt="Boleto">
+                                    <span>Boleto</span>
+                                </div>
+                            </div>
+                            
+                            <div class="btn">
+                                <a href="#"><button>COMPRAR</button></a>
+                            </div>
+                        </div>
+                        
                 </div>
-                <div class="btn-comprar">
-                    
-                </div>
-            </div>
-        </div>
+            </section>
 
         <footer>
             <div class="interface-footer">
@@ -99,5 +127,19 @@
             </div>
         </footer>
 
-</body>
+        <script>
+            function selectSize(element) {
+                document.querySelectorAll('.size-option').forEach(option => {
+                    option.classList.remove('selected');
+                });
+                element.classList.add('selected');
+            }
+    
+            function selectPayment(element) {
+                document.querySelectorAll('.payment-option').forEach(option => {
+                    option.classList.remove('selected');
+                });
+                element.classList.add('selected');
+            }
+        </script>
 </html>
