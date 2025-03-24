@@ -123,7 +123,7 @@ section.container{
     justify-content: center;
 }
 
-.card img{
+.card > img{ 
     width: 400px;
     height: 380px;
 }
@@ -145,7 +145,6 @@ section.container{
     font-weight: 700;
     font-style: italic;
 }
-
 
 .txt button{
     background: transparent;
@@ -187,13 +186,9 @@ section.container{
 }
 
 .selected {
-    background-color: #000;
+    background-color: #2e2e2e;
     color: #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-}
-
-.selected:hover {
-    background-color: #000000;
 }
 
 .payment-box {
@@ -368,9 +363,10 @@ section.container{
     justify-content: center;
 }
 
-.card img{
+.card > img{
     width: 300px;
     height: 280px;
+    background-color: rgb(231, 231, 231);
 }
 
 .txt h2{
@@ -416,24 +412,8 @@ section.container{
     font-style: italic;
 }
 
-.size-option{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin: 8px;
-}
-
-.size-option:hover, .payment-option:hover {
-    transform: scale(1.05);
-}
-
 .selected {
-    background-color: #000;
-    color: #fff;
-}
-
-.selected:hover {
-    background-color: #000000;
+    background-color: #2e2e2e;
 }
 
 .payment-box {
@@ -449,23 +429,8 @@ section.container{
 }
 
 .payment-option {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 15px;
     margin: 1px;
     font-size: 12px;
-    gap: 5px;
-}
-
-.payment-option img {
-    width: 22px;
-    height: 22px;
-    transition: 0.3s ease;
-}
-
-.payment-option:hover img {
-    transform: scale(1.20);
 }
 
 /* FOOTER */
@@ -533,9 +498,10 @@ section.container{
     justify-content: center;
 }
 
-.card img{
+.card > img{
     width: 300px;
     height: 280px;
+    background-color: rgb(231, 231, 231);
 }
 
 .txt h2{
@@ -581,24 +547,8 @@ section.container{
     font-style: italic;
 }
 
-.size-option{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin: 8px;
-}
-
-.size-option:hover, .payment-option:hover {
-    transform: scale(1.05);
-}
-
 .selected {
-    background-color: #000;
-    color: #fff;
-}
-
-.selected:hover {
-    background-color: #000000;
+    background-color: #2e2e2e;
 }
 
 .payment-box {
@@ -614,23 +564,8 @@ section.container{
 }
 
 .payment-option {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 15px;
     margin: 1px;
     font-size: 12px;
-    gap: 5px;
-}
-
-.payment-option img {
-    width: 22px;
-    height: 22px;
-    transition: 0.3s ease;
-}
-
-.payment-option:hover img {
-    transform: scale(1.20);
 }
 
 /* FOOTER */
