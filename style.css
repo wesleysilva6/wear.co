@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* ESTILO GERAL */
 *{
     padding: 0;
     margin: 0;
@@ -12,6 +13,7 @@ body{
     background: rgb(255, 255, 255);
 }
 
+/* CABEÇALHO */
 header{
     width: 100%;
 }
@@ -42,7 +44,6 @@ header{
     color: #fff;
 }
 
-
 .top-header .logosocial button{
     padding: 1px;
     height: 40px;
@@ -52,7 +53,7 @@ header{
     border-radius: 20px;
     border: 0px, solid rgb(255, 255, 255);
     cursor: pointer;
-    font-size: 16px;
+    font-size: 16px;    
 }
 
 .bottom-header{
@@ -114,25 +115,27 @@ header{
     height: 250px;
 }
 
+/* CONTAINER */
 .container{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     padding: 20px;
     margin-top: 20px;
 }
 
 .card{
     width: 200px;
+    height: 300px;
     border-radius: 10px;
     border: 2px solid black;
     text-align: center;
 }
 
 .card:hover{
-    transform: scale(1.05);
-    transition: 0.3s;
+    transform: scale(1.04);
+    transition: 0.3s ease-in-out;
 }
 
 .card img{
@@ -157,14 +160,12 @@ header{
 }
 
 .card button{
-    margin-top: 0px;
-    padding: 10px;
+    padding: 6px;
     border: 2px solid #000000;
     border-radius: 30px;
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     cursor: pointer;
-    margin: 22px;
     width: 150px;
     text-align: center;
     font-size: 20px;
@@ -303,8 +304,8 @@ footer .line-footer2{
     }
     
     .container{
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(4,1Fr);
         justify-content: center;
         margin-top: 15px;
     }
@@ -406,8 +407,8 @@ footer .line-footer2{
     }
     
     .container{
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
         justify-content: center;
         gap: 10px;
         padding: 10px;
@@ -416,6 +417,7 @@ footer .line-footer2{
     
     .card{
         width: 99px;
+        height: 200px;
         border-radius: 10px;
         border: 2px solid black;
         text-align: center;
