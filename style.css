@@ -120,14 +120,13 @@ header{
     display: grid;
     grid-template-columns: repeat(7,1fr);
     justify-content: center;
-    gap: 0px;
+    gap: 20px;
     padding: 20px;
     margin-top: 20px;
 }
 
 .card{
     width: 200px;
-    height: 300px;
     border-radius: 10px;
     border: 2px solid black;
     text-align: center;
