@@ -120,7 +120,6 @@ header{
     display: grid;
     grid-template-columns: repeat(7,1fr);
     justify-content: center;
-    gap: 20px;
     padding: 20px;
     margin-top: 20px;
 }
