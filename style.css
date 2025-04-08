@@ -420,7 +420,7 @@ footer .line-footer2{
     
     .container{
         display: grid;
-        grid-template-columns: repeat(2, 90px);
+        grid-template-columns: repeat(3, 100px);
         margin: 20px;
     }
     

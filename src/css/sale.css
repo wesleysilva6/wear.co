@@ -513,9 +513,9 @@ section.container{
 
 .card > img{
     width: 370px;
-    
 }
 
+/* TEXTO */
 .txt h2{
     font-size: 20px;
     text-align: center;
@@ -558,6 +558,7 @@ section.container{
     font-style: italic;
 }
 
+/* BOX SIZES */
 #sizes {
     display: flex;
     flex-wrap: wrap;
@@ -569,6 +570,7 @@ section.container{
     transition: none;
 }
 
+/* BOX PAGAMENTOS */
 .payment-box {
     margin: 5px;
     padding: 5px;
