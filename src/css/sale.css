@@ -132,6 +132,7 @@ section.container{
     height: 350px;
 }
 
+/* TEXTO CARD COMPRA */
 .txt h2.title{
     font-family: "Poppins", sans-serif;
     font-weight: 100;
@@ -167,6 +168,7 @@ section.container{
     margin-top: 30px;
 }
 
+/* BOX SIZES */
 .size-option{
     display: inline-flex;
     align-items: center;    
@@ -193,6 +195,7 @@ section.container{
     transform: scale(1.05);
 }
 
+/* BOX PAGAMENTO */
 .payment-box {
     margin: 10px;
     padding: 20px;
@@ -234,6 +237,17 @@ section.container{
 
 .selected img {
     transform: scale(1.1);
+}
+
+/* SOBRE */
+section.sobre {
+    text-align: left;
+    margin: 0 0 0 20px;
+}
+
+.sobre p {
+    margin: 0 0 100px 0;
+    flex-direction: column;
 }
 
 /* FOOTER */
