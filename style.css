@@ -13,6 +13,10 @@ body{
     background: rgb(255, 255, 255);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* CABEÇALHO */
 header{
     width: 100%;
@@ -24,6 +28,7 @@ header{
     padding: 10px 10px;
 }
 
+/* TOPO */
 .top-header{
     padding: 5px;
     background: rgb(0, 0, 0);
@@ -84,6 +89,7 @@ header{
     list-style-type: none;
 }
 
+/* MENU */
 .drop-hover{
     position: relative;
 }
@@ -105,7 +111,7 @@ header{
 
 .drop-hover:hover .drop{
     width: 190px;
-    height: 190px;
+    height: 165px;
     transition: 0.4s;
 }
 
@@ -115,21 +121,22 @@ header{
     height: 250px;
 }
 
-/* CONTAINER */
+/* CARD DE COMPRA */
 .container{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(7, 200px);
     justify-content: center;
     gap: 20px;
     padding: 20px;
-    margin-top: 20px;
+    margin: 20px;
 }
 
 .card{
     width: 200px;
+    height: 300px;
     border-radius: 10px;
     border: 2px solid black;
-    text-align: center;
+    text-align: center; 
 }
 
 .card:hover{
@@ -377,6 +384,12 @@ footer .line-footer2{
         justify-content: center;
         gap: 80px;
     }
+
+    .box-line-footer .btn-redes button:hover{
+        background-color: #000000;
+        color: #ffffff;
+        transition: none;
+    }
     
     .line-footer2 .box-links a{
         color: #ffffff;
@@ -407,11 +420,8 @@ footer .line-footer2{
     
     .container{
         display: grid;
-        grid-template-columns: repeat(4,1fr);
-        justify-content: center;
-        gap: 10px;
-        padding: 10px;
-        margin-top: 20px;
+        grid-template-columns: repeat(2, 90px);
+        margin: 20px;
     }
     
     .card{
@@ -420,6 +430,7 @@ footer .line-footer2{
         border-radius: 10px;
         border: 2px solid black;
         text-align: center;
+        gap: 10px;
     }
 
     .card:hover{
@@ -463,38 +474,37 @@ footer .line-footer2{
     span{
         display: none;
     }
-    
+
     .line-footer1 h1{
         font-size: 30px;
     }
-    
+
     .line-footer1 p{
         font-size: 15px;
         margin: 10px;
     }
-    
+
     .line-footer1 form input[type=email]{
         width: 250px;
     }
-    
+
     .line-footer1 form input[type=submit]{
         width: 70px;
     }
-    
+
+    .line-footer1 form input:hover[type=submit]{
+        background-color: #000000;
+        color: #ffffff;
+    }
+
     footer .line-footer2{
         justify-content: center;
         gap: 70px;
         }
-    
-    .box-line-footer .btn-redes button{
-        width: 30px;
-        height: 30px;
-        font-size: 15px;
-        background: transparent;
+
+    .box-line-footer .btn-redes button:hover{
+        background-color: #000000;
         color: #ffffff;
-        border: 1px solid #ffffff;
-        border-radius: 20px;
-        cursor: pointer;
-        margin-top: 10px;
+        transition: none;
     }
 }

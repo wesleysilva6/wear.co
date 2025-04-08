@@ -15,6 +15,11 @@ body{
     background-color: #ffffff;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+/* CABEÇALHO */
 header{
     width: 100%;
 }
@@ -26,7 +31,6 @@ header{
 }
 
 /* TOPO */
-
 .top-header{
     padding: 5px;
     background-color: #000000;
@@ -108,7 +112,7 @@ header{
 
 .drop-hover:hover .drop{
     width: 190px;
-    height: 190px;
+    height: 165px;
     transition: 0.4s;
     font-size: 12px;
 }
@@ -124,8 +128,8 @@ section.container{
 }
 
 .card > img{ 
-    width: 400px;
-    height: 380px;
+    width: 500px;
+    height: 350px;
 }
 
 .txt h2.title{
@@ -145,7 +149,7 @@ section.container{
 
 .txt button{
     background: transparent;
-    border: 2px inset #000000;
+    border: 2px solid #000000;
     border-radius: 20px;
     padding: 10px;  
     cursor: pointer;
@@ -165,7 +169,7 @@ section.container{
 
 .size-option{
     display: inline-flex;
-    align-items: center;
+    align-items: center;    
     justify-content: center;
     padding: 10px 15px;
     margin: 8px;
@@ -176,44 +180,50 @@ section.container{
     font-size: 15px;
     transition: all 0.3s ease-in-out;
     background-color: #fff;
+}
+
+.size-option.selected{
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
 }
 
 .size-option:hover, .payment-option:hover {
     transform: scale(1.05);
 }
 
-.selected {
-    background-color: #2e2e2e;
-    color: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-}
-
 .payment-box {
-    margin-top: 5px;
-    padding: 5px;
+    margin: 10px;
+    padding: 20px;
     border: 2px solid #000;
-    border-radius: 0px;
+    border-radius: 16px;
     background-color: #fff;
     display: flex;
     justify-content: center;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .payment-option {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 15px;
+    padding: 15px 25px;
     margin: 8px;
     border: 2px solid #000;
-    border-radius: 16px;
+    border-radius: 20px;
     cursor: pointer;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
     transition: all 0.3s ease-in-out;
-    background-color: #fff;
-    gap: 5px;
-    margin-top: 10px;
+    gap: 10px;
+}
+
+.payment-option.selected {
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
 }
 
 .payment-option img {
@@ -222,8 +232,8 @@ section.container{
     transition: 0.3s ease;
 }
 
-.payment-option:hover img {
-    transform: scale(1.20);
+.selected img {
+    transform: scale(1.1);
 }
 
 /* FOOTER */
@@ -294,7 +304,6 @@ footer .line-footer2{
     justify-content: space-between;
     text-align: center;
 }
-
 
 .line-footer2 .box-links a{
     color: #ffffff;
@@ -413,6 +422,13 @@ section.container{
     background-color: #2e2e2e;
 }
 
+#sizes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
 .payment-box {
     margin-top: 5px;
     padding: 5px;
@@ -486,7 +502,7 @@ section.container{
 
 /* CARD DE COMPRA */
 section.container{
-    padding: 50px 4%;
+    padding: 60px 4%;
 }
 
 .card{
@@ -496,9 +512,8 @@ section.container{
 }
 
 .card > img{
-    width: 300px;
-    height: 280px;
-    background-color: rgb(231, 231, 231);
+    width: 370px;
+    
 }
 
 .txt h2{
@@ -507,10 +522,9 @@ section.container{
 }
 
 .txt p{
-    margin-top: 7px;
+    margin: 7px;
     text-align: center;
 }
-
 
 .txt button{
     background: transparent;
@@ -544,25 +558,35 @@ section.container{
     font-style: italic;
 }
 
-.selected {
-    background-color: #2e2e2e;
+#sizes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.size-option{
+    transition: none;
 }
 
 .payment-box {
-    margin-top: 5px;
+    margin: 5px;
     padding: 5px;
-    border: 2px solid #000;
-    border-radius: 0px;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
 }
 
 .payment-option {
-    margin: 1px;
-    font-size: 12px;
+    padding: 20px 10px;
+    margin: 4px;
+    border-radius: 20px;
+    font-size: 8px;
+    transition: none;
+    gap: 8px;
+}
+
+.payment-option img {
+    width: 18px;
+    height: 18px;
+    transition: 0.3s ease;
 }
 
 /* FOOTER */
@@ -583,27 +607,15 @@ section.container{
         width: 70px;
         color: #000000;
     }
-
-    .line-footer1 form input:hover[type=submit]{
-        background-color: #ffffff;
-        color: #000000;
-    }
-
     
     footer .line-footer2{
         justify-content: center;
         gap: 70px;
         }
     
-    .box-line-footer .btn-redes button{
-        width: 30px;
-        height: 30px;
-        font-size: 15px;
-        background: transparent;
-        color: #ffffff;
-        border: 1px solid #ffffff;
-        border-radius: 20px;
-        cursor: pointer;
-        margin-top: 10px;
-    }
+        .box-line-footer .btn-footer button:hover{
+            background-color: #000000;
+            color:#ffffff;
+            transition: none;
+        }
 }   
